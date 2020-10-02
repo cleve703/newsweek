@@ -1,4 +1,89 @@
 .navbar-brand > svg {
-  fill: red;
+  fill: white;
   width: 100px;
+}
+.navbar-custom {
+  background-color: #f72210;
+  color: white;
+}
+.navbar-custom a {
+  color: white;
+}
+.navbar-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+.custom-toggler.navbar-toggler {
+  border-color: white;
+} 
+.navbar a {
+  font-family: 'Roboto Condensed';
+  text-transform: uppercase;
+}
+.btn-yellow {
+  background-color: #ffe400;
+  border-radius: 25px;
+  font-family: 'Roboto Condensed';
+  text-transform: uppercase;
+  padding: 3px 10px;
+}
+.logo-large {
+  fill: white;
+}
+.logo-large > svg {
+  height: 50px;
+}
+#link-list {
+  right: 0;
+  float: right;
+  list-style-type: none;
+  width: 180px;
+  padding-left: 5px;
+  font-family: 'Roboto Condensed';
+  font-size: 1.25rem;
+  box-shadow: -2px 2px 2px #666666;
+}
+#link-list li {
+  width: 170px
+}
+#link-list li::after {
+  content: ">";
+  float: right;
+}
+#wide-navbar {
+  display: block;
+  padding: 10px;
+}
+#wide-navbar ul {
+  list-style-type: none;
+}
+#wide-navbar {
+  font-family: 'Roboto Condensed', sans-serif;
+}
+#navbar-right-links * {
+  text-transform: uppercase;
+}
+#link-list {
+  display: block;
+}
+#small-navbar ul {
+  display: inline-flex;
+  flex-direction: row;
+  float: right;
+  margin-top: -5px;
+}
+.navbar-nav > .navbar-item {
+  display: flex;
+  align-items: center;
+}
+#login-link {
+  margin-right: 10px;
+}
+#navbarSupportedContent {
+  float: right;
+  width: 100%;
+}
+@media (max-width: 400px) {
+  #subscription-link {
+    display: none;
+  }
 }
