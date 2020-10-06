@@ -90,6 +90,7 @@
 #content{ 
   position: relative;
   z-index: 0;
+  padding-top: 60px;
 }
 .wrap {
   position: relative;
@@ -103,16 +104,21 @@
 }
 .category h5 {
   padding: 8px 15px 9px;
+  font-family: 'Roboto Condensed'; 
+  color: #f72210; background: rgba(225,225,225,0.75);
 }
-/* #top-story {
-  background-color: lightcyan
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
 }
-#featured-stories {
-  background-color: lightcoral;
+h4 {
+  font-family: 'Roboto Condensed'; 
+  font-weight: normal; color: black;
 }
-#the-debate {
-  background-color: chartreuse;
-} */
+#content {
+  background: #eeeeee;
+}
 @media (max-width: 400px) {
   #subscription-link {
     display: none;
