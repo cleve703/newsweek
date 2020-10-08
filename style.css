@@ -119,6 +119,30 @@ h4 {
 #content {
   background: #eeeeee;
 }
+hr#top-bar {
+  border-top: 4px solid lightgray;
+}
+hr#middle-bar {
+  height: .5px;
+  border-top: 1px solid lightgray;
+  border-bottom: 2px solid lightgray;
+}
+hr#bottom-bar {
+  border-top: 4px solid lightgray;
+}
+.circle {
+  background: black;
+  color: lightgray;
+  text-align: center;
+  width: 30px;
+  height:30px;
+  border-radius: 50%;
+  font-family: 'Roboto Condensed';
+  padding-top: 6px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -33px;
+}
 @media (max-width: 400px) {
   #subscription-link {
     display: none;
