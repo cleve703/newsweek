@@ -102,10 +102,13 @@
   z-index: 2;
   color: white;
 }
+h5 {
+  font-family: 'Roboto Condensed'; 
+}
 .category h5 {
   padding: 8px 15px 9px;
-  font-family: 'Roboto Condensed'; 
   color: #f72210; background: rgba(225,225,225,0.75);
+  text-transform: uppercase;
 }
 body {
   font-family: Arial, Helvetica, sans-serif;
@@ -147,4 +150,13 @@ hr#bottom-bar {
   #subscription-link {
     display: none;
   }
+}
+byline {
+  font-family: 'Roboto Condensed';
+  font-size: 1.25rem;
+  color: gray;
+  text-transform: uppercase;
+}
+byline::before {
+  content: "BY "
 }
