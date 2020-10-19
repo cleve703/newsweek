@@ -1,3 +1,13 @@
+@font-face {
+  font-family: 'Genericons';
+  src: url('font/genericons-regular-webfont.eot');
+  src: url('font/genericons-regular-webfont.eot?#iefix') format('embedded-opentype'),
+       url('font/genericons-regular-webfont.woff') format('woff'),
+       url('font/genericons-regular-webfont.ttf') format('truetype'),
+       url('font/genericons-regular-webfont.svg#genericonsregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
 .navbar-brand > svg {
   fill: white;
   width: 135px;
@@ -146,11 +156,6 @@ hr#bottom-bar {
   margin-right: auto;
   margin-top: -33px;
 }
-@media (max-width: 400px) {
-  #subscription-link {
-    display: none;
-  }
-}
 byline {
   font-family: 'Roboto Condensed';
   font-size: 1.25rem;
@@ -159,4 +164,27 @@ byline {
 }
 byline::before {
   content: "BY "
+}
+.genericon {
+  font-family: "Genericons";
+}
+.genericon-facebook::before {
+  content: "\f203";
+}
+.genericon-twitter::before {
+  content: "\f202"
+}
+.genericon-instagram::before {
+  content: "\f215"
+}
+.genericon-tumblr::before {
+  content: "\f214"
+}
+.genericon-linkedin::before {
+  content: "\f207";
+}
+@media (max-width: 400px) {
+  #subscription-link {
+    display: none;
+  }
 }
