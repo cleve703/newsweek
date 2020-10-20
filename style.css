@@ -167,6 +167,12 @@ byline::before {
 }
 .genericon {
   font-family: "Genericons";
+  font-size: 1.6rem;
+  color: #666;
+}
+a.genericon:hover {
+  color: blue;
+  text-decoration: none;
 }
 .genericon-facebook::before {
   content: "\f203";
@@ -183,8 +189,19 @@ byline::before {
 .genericon-linkedin::before {
   content: "\f207";
 }
+#footer-links a, #lower-footer-links a {
+  color: #666;
+}
 @media (max-width: 400px) {
   #subscription-link {
     display: none;
+  }
+}
+@media (min-width:768px) {
+  #footer-links li:nth-child(n+3):before, 
+  #lower-footer-links li:nth-child(n+2):before {
+    content: " | ";
+    margin-right: 8px;
+    color: #ccc !important;
   }
 }
