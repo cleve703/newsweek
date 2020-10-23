@@ -5,20 +5,23 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="">
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" media="screen and (min-width: 768px)" href="tablet.css">
+  <link rel="stylesheet" media="screen and (min-width: 992px)" href="laptop.css">
+
   <title>Newsweek Clone</title>
 </head>
 <body>
   
   <div class="container-fluid navbar-custom d-none d-lg-block" id="wide-navbar" style="max-width: 1300px;">
     <div class="row">
-      <div class="col"><nav>
-        <ul class="mt-2">
-          <li><img src="img/partly-cloudy.png" height="20px"> 57° Washington, DC</li>
-          <li>Wed, Sep 30, 2020</li>
-        </ul>
-      </nav></div>
+      <div class="col">
+        <nav>
+          <ul class="mt-2">
+            <li><img src="img/partly-cloudy.png" height="20px"> 57° Washington, DC</li>
+            <li>Wed, Sep 30, 2020</li>
+          </ul>
+        </nav></div>
       <div class="col-4"><a class="logo-large" href="#"><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 395.6 60" style="enable-background:new 0 0 395.6 60;" xml:space="preserve"><g>
         <path class="st0" d="M58.7,10.8h-5.6v48.3H42.8l-25.1-33v22.1h5.6v10.8H0V48.3h5.6V10.8H0V0h17.6L41,30.7V10.8h-5.6V0h23.2	L58.7,10.8L58.7,10.8z M95.8,38c0,0.9,0,1.8-0.1,2.7H70.3c-0.7,8.2,2.4,10.6,7.1,10.6c3.9,0,6.9-2.6,6.9-6.6h11	c-0.3,7.2-4,15.4-18.5,15.4c-14.5,0-21.3-10.5-21.3-22.1c0-10.5,7-21.6,21-21.6C89.9,16.3,95.8,25.6,95.8,38 M159,27.3h-3.7	l-9.4,31.8h-12.5l-5.9-17.4l-5.3,17.4h-12.8L98.8,27.4h-3.7V16.6h22.1v10.7h-5.6l5.8,16.9l7.6-27.6h6.8l9.3,27.6l5-16.9h-5.6V16.6	H159L159,27.3L159,27.3z M174.5,27.8c0,1.5,1.2,2.5,5.4,3.9l6,2c5.5,1.8,12.1,5.9,12.1,13.4c0,8.8-6.6,13-14.7,13	c-6.5,0-11.5-3.2-12.9-4.6V59h-10.8V44.4h10.6c0.3,4.8,4.6,7.3,8.5,7.3c3.2,0,4.7-1.4,4.7-3c0-2-1.2-3.1-6.5-4.8l-5.3-1.8	c-5.4-1.7-11.4-5.7-11.4-12.8c0-8.7,7.7-13.1,14.3-13.1c6.8,0,10.1,1.9,11.8,3.8l0.1-3.3H197v13.3h-11.2c-0.2-3.6-3.7-5.2-7.2-5.2	C175.8,24.8,174.5,26.1,174.5,27.8 M262.8,27.3h-3.7l-9.4,31.8h-12.5l-5.9-17.4L226,59.1h-12.8l-10.6-31.7h-3.7V16.6h22.1v10.7	h-5.6l5.8,16.9l7.6-27.6h6.8l9.3,27.7l5-16.9h-5.6V16.6h18.5V27.3z M302,37.9c0,0.9,0,1.8-0.1,2.7h-25.4	c-0.7,8.2,2.4,10.6,7.1,10.6c3.9,0,6.9-2.6,6.9-6.6h11c-0.3,7.2-4,15.4-18.5,15.4c-14.5,0-21.3-10.5-21.3-22.1	c0-10.5,7-21.6,21-21.6C296.1,16.2,302,25.5,302,37.9 M343.9,37.8c0,0.9,0,1.8-0.1,2.7h-25.4c-0.7,8.2,2.4,10.6,7.1,10.6	c3.9,0,6.9-2.6,6.9-6.6h11c-0.3,7.2-4,15.4-18.5,15.4c-14.5,0-21.3-10.5-21.3-22.1c0-10.5,7-21.6,21-21.6	C338,16.1,343.9,25.4,343.9,37.8 M389.9,59h-12.8l-13.3-17.3l-4.3,3.2v3.4h3.8V59h-19.6V48.3h3.7V10.6h-5.6V0h17.8v33.9l8.9-6.5	h-5.6V16.6h23.9v10.8h-3.7l-9.3,7l10.7,13.9h5.6L389.9,59L389.9,59z M395.6,56.6c0,0.5-0.1,0.9-0.4,1.2c-0.2,0.4-0.5,0.7-0.9,0.9	c-0.4,0.2-0.8,0.4-1.3,0.4c-0.5,0-0.9-0.1-1.2-0.4c-0.4-0.2-0.7-0.5-0.9-0.9c-0.2-0.4-0.4-0.8-0.4-1.2c0-0.5,0.1-0.9,0.4-1.2	c0.2-0.4,0.5-0.7,0.9-0.9c0.4-0.2,0.8-0.4,1.2-0.4c0.5,0,0.9,0.1,1.3,0.4c0.4,0.2,0.7,0.5,0.9,0.9	C395.5,55.8,395.6,56.2,395.6,56.6 M394.6,58c0.4-0.4,0.6-0.9,0.6-1.4c0-0.6-0.2-1-0.6-1.4s-0.9-0.6-1.4-0.6s-1,0.2-1.4,0.6	c-0.4,0.4-0.6,0.9-0.6,1.4c0,0.6,0.2,1,0.6,1.4c0.4,0.4,0.9,0.6,1.4,0.6S394.2,58.4,394.6,58 M393.6,56.8c0.1,0.1,0.2,0.1,0.2,0.1	c0.1,0.1,0.2,0.2,0.2,0.3c0,0,0.2,0.3,0.4,0.8h-0.8c-0.3-0.5-0.4-0.8-0.5-0.9c-0.1-0.1-0.2-0.2-0.3-0.2c0,0-0.1,0-0.1,0v1.1h-0.6	v-2.6h1.2c0.4,0,0.6,0.1,0.7,0.2c0.2,0.2,0.2,0.3,0.2,0.6c0,0.2-0.1,0.4-0.2,0.5C393.9,56.6,393.8,56.7,393.6,56.8 M393.5,56.3	c0.1-0.1,0.1-0.2,0.1-0.3s-0.1-0.2-0.1-0.3c-0.1-0.1-0.2-0.1-0.4-0.1h-0.3v0.7h0.3C393.3,56.4,393.4,56.4,393.5,56.3 M318.4,33.5	h13.9c0-6-3.9-8.4-6.8-8.4C322.1,25.2,318.6,27.9,318.4,33.5 M276.5,33.6h13.9c0-6-3.9-8.4-6.8-8.4C280.3,25.2,276.8,28,276.5,33.6 M70.3,33.7h13.9c0-6-3.9-8.4-6.8-8.4C74.1,25.3,70.6,28.1,70.3,33.7"></path>
         </g></svg></a></div>
@@ -68,41 +71,111 @@
 
   <div class="container-fluid px-0" id="content">
     <div class="row no-gutters">
-      <div class="col-12 p-3 col-md-6 order-md-2" id="top-story" style="background: white">
-        <h5 class="text-uppercase" style="font-family: 'Roboto Condensed'; color: gray;">Top Story</h5>
-        <div class="wrap">
-          <div class="category">
-            <h5 class="mb-0">U.S.</h5>
+
+      <div class="col-12">
+        
+        <div class="row">
+          <div class="left-content col-12 col-sm-12 col-md-12 col-lg-8  px-lg-3 order-1 ">
+            <!-- FEATURED STORIES -->
+            <div class="col-12 pt-3 order-2" id="featured-stories" style="background: white">
+              <h5 class="text-uppercase" style="font-family: 'Roboto Condensed'; color: gray;">Featured Stories</h5>
+              
+              <article>
+                <div class="wrap">
+                  <div class="category">
+                    <h5 class="mb-0">POLITICS</h5>
+                  </div>
+                  <a href="#"><img src="img/speaker-house-nancy-pelosi.jpg" style="width: 100%;"  alt="speaker nancy pelosi" class="img-fluid"></a>
+                </div> 
+                <a href="#"><h4>Nancy Pelosi Says Donald Trump's Actions Were 'Brazen Invitation' to COVID</h4></a>
+                <p>Speaker of the House Nancy Pelosi took aim at Donald Trump's previous actions following the president's positive coronavirus test result.</p>
+              </article>
+              
+              <article>
+                <div class="wrap">
+                  <div class="category">
+                    <h5 class="mb-0">NEWS</h5></div>
+                    <a href="#"><img src="img/joe-biden.jpg" style="width: 100%;"  alt="vice president joe biden" class="img-fluid"></a>
+                  </div> 
+                  <a href="#"><h4>Biden Campaign Tells Staffers Not to Post About Trump's COVID Diagnosis</h4></a>
+                  <p>Staffers on Joe Biden's campaign have been asked to "refrain from posting about the situation on social media," following President Trump's COVID-19 testing result.</p>
+                </article>
+                
+                <article>
+                  <div class="wrap">
+                    <div class="category"><h5 class="mb-0">U.S.</h5></div>
+                    <a href="#"><img src="img/us-president-donald-trump.jpg" style="width: 100%;"  alt="vice president joe biden" class="img-fluid"></a>
+                  </div> 
+                  <a href="#"><h4>Melania Trump Slams Personal Criticism of Child Separation in Secret Call </h4></a>
+                  <p>The first lady reportedly expressed her frustration about the backlash she faced for the president's policy that led to separating immigrant children from their families.</p>
+                </article>
+            </div>
           </div>
-          <a href="#"><img class="img-fluid" style="width: 100%;" src="img/donald-trump-military-patriot-losers-suckers.jpg" alt="donald and melania trump"></a>
-        </div>
-          <a href="#"><h4>Donald Trump Tests Positive For Coronavirus</h4></a>
-          <p>The president and first lady went into isolation after adviser Hope Hicks tested positive for the virus.</p>
-        </div>
-      <div class="col-12 mt-4 p-3 mt-md-0 order-md-1 col-md-6" id="featured-stories" style="background: white">
-        <h5 class="text-uppercase" style="font-family: 'Roboto Condensed'; color: gray;">Featured Stories</h5>
-        <div class="wrap">
-          <div class="category">
-            <h5 class="mb-0">POLITICS</h5>
+          <!-- TOP STORY -->
+          <div class="middle-content col-12 col-sm-12 col-md-7 col-lg-7 px-sm-3 px-lg-3 order-0">
+            <div class="top-story col-12 pt-3" id="top-story" style="background: white">
+                <h5 class="text-uppercase" style="font-family: 'Roboto Condensed'; color: gray;">Top Story</h5>
+                <div class="wrap">
+                  <div class="category">
+                    <h5 class="mb-0">U.S.</h5>
+                  </div>
+                  <a href="#"><img class="img-fluid" style="width: 100%;" src="img/donald-trump-military-patriot-losers-suckers.jpg" alt="donald and melania trump"></a>
+                </div>
+                <a href="#"><h4>Donald Trump Tests Positive For Coronavirus</h4></a>
+                <p>The president and first lady went into isolation after adviser Hope Hicks tested positive for the virus.</p>
+            </div>
+            
+            <!-- MY TURN / CULTURE & TRAVEL -->
+            <div class="col-12 order-6 order-md-3 d-none d-md-12" id="my-turn" style="background: white;">
+              <h5 style="font-family: 'Roboto Condensed'; color: gray">MY TURN</h5>
+              
+              <div class="row">
+
+                <div class="col-12 col-md-4">
+                  <img class="img-fluid" style="width: 100%;" src="img/square-512.png">
+                  <h5 class="pt-2 pb-3" style="font-family: 'Roboto Condensed'; color: gray">Lorem ipsum dolor sit amet, consectetur adipiscing elit</h5>
+                </div>
+
+                <div class="col-12 col-md-4">
+                  <img class="img-fluid" style="width: 100%;" src="img/square-512.png">
+                  <h5 class="pt-2 pb-3" style="font-family: 'Roboto Condensed'; color: gray">Lorem ipsum dolor sit amet, consectetur adipiscing elit</h5>
+                </div>
+
+                <div class="col-12 col-md-4">
+                  <img class="img-fluid" style="width: 100%;" src="img/square-512.png">
+                  <h5 class="pt-2 pb-3" style="font-family: 'Roboto Condensed'; color: gray">Lorem ipsum dolor sit amet, consectetur adipiscing elit</h5>
+                </div>
+              </div>
+              
+              <h5 style="font-family: 'Roboto Condensed'; color: gray">CULTURE & TRAVEL</h5>
+              
+              <div class="row">
+
+                <div class="col-12 col-md-4">
+                  <img class="img-fluid" style="width: 100%;" src="img/square-512.png">
+                  <h5 class="pt-2 pb-3" style="font-family: 'Roboto Condensed'; color: gray">Lorem ipsum dolor sit amet, consectetur adipiscing elit</h5>
+                </div>
+                <div class="col-12 col-md-4">
+                  <img class="img-fluid" style="width: 100%;" src="img/square-512.png">
+                  <h5 class="pt-2 pb-3" style="font-family: 'Roboto Condensed'; color: gray">Lorem ipsum dolor sit amet, consectetur adipiscing elit</h5>
+                </div>
+                <div class="col-12 col-md-4">
+                  <img class="img-fluid" style="width: 100%;" src="img/square-512.png">
+                  <h5 class="pt-2 pb-3" style="font-family: 'Roboto Condensed'; color: gray">Lorem ipsum dolor sit amet, consectetur adipiscing elit</h5>
+                </div>
+              
+              </div>
+              
+              
+            </div>
+          
           </div>
-          <a href="#"><img src="img/speaker-house-nancy-pelosi.jpg" style="width: 100%;"  alt="speaker nancy pelosi" class="img-fluid"></a>
-        </div> 
-          <a href="#"><h4>Nancy Pelosi Says Donald Trump's Actions Were 'Brazen Invitation' to COVID</h4></a>
-          <p>Speaker of the House Nancy Pelosi took aim at Donald Trump's previous actions following the president's positive coronavirus test result.</p>
-        <div class="wrap">
-          <div class="category"><h5 class="mb-0">NEWS</h5></div>
-          <a href="#"><img src="img/joe-biden.jpg" style="width: 100%;"  alt="vice president joe biden" class="img-fluid"></a>
-        </div> 
-          <a href="#"><h4>Biden Campaign Tells Staffers Not to Post About Trump's COVID Diagnosis</h4></a>
-          <p>Staffers on Joe Biden's campaign have been asked to "refrain from posting about the situation on social media," following President Trump's COVID-19 testing result.</p>
-        <div class="wrap">
-          <div class="category"><h5 class="mb-0">U.S.</h5></div>
-          <a href="#"><img src="img/us-president-donald-trump.jpg" style="width: 100%;"  alt="vice president joe biden" class="img-fluid"></a>
-        </div> 
-          <a href="#"><h4>Melania Trump Slams Personal Criticism of Child Separation in Secret Call </h4></a>
-          <p>The first lady reportedly expressed her frustration about the backlash she faced for the president's policy that led to separating immigrant children from their families.</p>
-        </div>
-      <div class="col-12 mt-4 p-3 order-md-3" id="the-debate" style="background: white;">
+          
+          
+          <!-- THE DEBATE         -->
+    <div class="col-12 order-3 mt-4 p-3 order-md-6" id="the-debate" style="background: white;">
+      
+      <div class="">  
         <h5 style="font-family: 'Roboto Condensed'; color: gray">THE DEBATE</h5>
         <hr id="top-bar">
         <img class="float-left mr-3" style="height: 63px; width: 63px;" src="img/swalwell2.png">
@@ -115,43 +188,57 @@
         <byline>Jody Hice</byline>
         <hr id="bottom-bar">
       </div>
-      <div class="col-12 mt-4 p-3 order-md-4" id="opinion" style="background: white;">
-        <h5 style="font-family: 'Roboto Condensed'; color: gray">OPINION</h5>
-        <img class="float-left mr-3" style="height: 63px; width: 63px;" src="img/abdul-el-sayed.png">
-        <h5>Trump Loves Government Health Care for Him, Just Not for Us</h5>
-        <byline>Abdul El-Sayed</byline>
-        <hr>
-        <img class="float-left mr-3" style="height: 63px; width: 63px;" src="img/stephen-bryen.png">
-        <h5>Lease F-35s to Taiwan to Counter China's Threats</h5>
-        <byline>Stephen Bryen</byline>
-        <hr>
-        <img class="float-left mr-3" style="height: 63px; width: 63px;" src="img/judge-j-michael-luttig-ret.png">
-        <h5>Real Men (And Women) Wear Masks and Distance</h5>
-        <byline>Judge J. Michael Luttig (Ret.)</byline>
-        <hr>
-        <img class="float-left mr-3" style="height: 63px; width: 63px;" src="img/sarah-stern.png">
-        <h5>Macron Shows What Not to Do in Lebanon</h5>
-        <byline>Sarah Stern</byline>
-        <hr>
-        <img class="float-left mr-3" style="height: 63px; width: 63px;" src="img/tom-rogers-timothy-e-wirth.png">
-        <h5>Amid Trump's Post Electoin Chaos, Hold Lawyers to Account on the Vote Count</h5>
-        <byline>Tom Rogers and Timothy E. Wirth</byline>
-        <hr>
-        <img class="float-left mr-3" style="height: 63px; width: 63px;" src="img/seth-j-frantzman.png">
-        <h5>How Azerbaijan's Drones Show what the Future War Looks Like</h5>
-        <byline>Seth J. Frantzman</byline>
-        <hr>
-        <img class="float-left mr-3" style="height: 63px; width: 63px;" src="img/sabrina-elba.png">
-        <h5>COVID Is Reversing Decades of Progress for Rural Women and Girls</h5>
-        <byline>Sabrina Dhowre Elba</byline>
-        <hr>
-        <img class="float-left mr-3" style="height: 63px; width: 63px;" src="img/maya-foa.png">
-        <h5>Saudi Bid to Rejoin Human Rights Council Can be Used as Leverage for Change</h5>
-        <byline>Maya Foa</byline>
-        <hr>
+    <!-- OPINION -->
+      
+      <div class="pt-4">
+      <h5 style="font-family: 'Roboto Condensed'; color: gray">OPINION</h5>
+    
+      <img class="float-left mr-3" style="height: 63px; width: 63px;" src="img/abdul-el-sayed.png">
+      <h5>Trump Loves Government Health Care for Him, Just Not for Us</h5>
+      <byline>Abdul El-Sayed</byline>
+      <hr>
+    
+      <img class="float-left mr-3" style="height: 63px; width: 63px;" src="img/stephen-bryen.png">
+      <h5>Lease F-35s to Taiwan to Counter China's Threats</h5>
+      <byline>Stephen Bryen</byline>
+      <hr>
+      
+      <img class="float-left mr-3" style="height: 63px; width: 63px;" src="img/judge-j-michael-luttig-ret.png">
+      <h5>Real Men (And Women) Wear Masks and Distance</h5>
+      <byline>Judge J. Michael Luttig (Ret.)</byline>
+      <hr>
+      
+      <img class="float-left mr-3" style="height: 63px; width: 63px;" src="img/sarah-stern.png">
+      <h5>Macron Shows What Not to Do in Lebanon</h5>
+      <byline>Sarah Stern</byline>
+      <hr>
+      
+      <img class="float-left mr-3" style="height: 63px; width: 63px;" src="img/tom-rogers-timothy-e-wirth.png">
+      <h5>Amid Trump's Post Electoin Chaos, Hold Lawyers to Account on the Vote Count</h5>
+      <byline>Tom Rogers and Timothy E. Wirth</byline>
+      <hr>
+      
+      <img class="float-left mr-3" style="height: 63px; width: 63px;" src="img/seth-j-frantzman.png">
+      <h5>How Azerbaijan's Drones Show what the Future War Looks Like</h5>
+      <byline>Seth J. Frantzman</byline>
+      <hr>
+      
+      <img class="float-left mr-3" style="height: 63px; width: 63px;" src="img/sabrina-elba.png">
+      <h5>COVID Is Reversing Decades of Progress for Rural Women and Girls</h5>
+      <byline>Sabrina Dhowre Elba</byline>
+      <hr>
+      
+      <img class="float-left mr-3" style="height: 63px; width: 63px;" src="img/maya-foa.png">
+      <h5>Saudi Bid to Rejoin Human Rights Council Can be Used as Leverage for Change</h5>
+      <byline>Maya Foa</byline>
+      <hr>
+    
       </div>
     </div>
-    <div class="col-12 mt-4 p-3 mt-md-0 order-md-5 col-md-6" id="rankings" style="background: white">
+
+    <!-- RANKINGS-1 -->
+    <div class="col-12 mt-4 p-3 mt-md-0 order-4 order-md-5 col-md-6" id="rankings" style="background: white">
+      
       <div class="wrap">
         <div class="category">
           <h5 class="mb-0">RANKINGS</h5>
@@ -159,9 +246,10 @@
         <a href="#"><img src="img/best-online-shops-2021.png" style="width: 100%;"  alt="world's best online shops graphic" class="img-fluid"></a>
       </div> 
       <div class="border">
-        <div class="m-2"><a href="#"><h4>What Brands do You Trust the Most</h4></a>
-        <p>Tell us for a chance to win. 2020 Brandspark Most Trusted Awards. Voted by consumers like you.</p></div>
+        <div class="m-2"><a href="#"><h4>Best Online Shops 2021</h4></a>
+        <p>Newsweek and Statista are recognizing 1,000 shops across 39 categories in eight groups.</p></div>
       </div>
+      
       <div class="wrap pt-4">
         <div class="category">
           <h5 class="mb-0">RANKINGS</h5>
@@ -172,6 +260,145 @@
         <div class="m-2"><a href="#"><h4>America's Best Physical Rehabilitation Centers 2020</h4></a>
         <p>Finding reliable rehabilitation can be a challenge. We partnered with Statista to rank the country's Best Physical Rehabilitation Centers.</p></div>
       </div>
+    </div>
+
+
+            <!-- MORE STORIES -->
+            <div class="col-12 order-6 mt-4 p-3 order-md-6" id="more-stories" style="background: white;">
+              <h5 style="font-family: 'Roboto Condensed'; color: gray">MORE STORIES</h5>
+              
+              <img class="float-left mr-3" style="height: 95px; width: 95px;" src="img/donald-trump(2).png">
+              <h5>Trump Video Claiming COVID-19 'Cure' Allowed to Spread by Facebook, Twitter</h5>
+              <p>"I guess they are therapeutic, some people don't know how to define therapeutic, I view it different, it's a cure," the president asserted in a video uploaded to his social media channels.</p>
+              <hr>
+              
+              <div style="min-height: 95px;">
+                <img class="float-left mr-3" style="height: 95px; width: 95px;" src="img/noaa-storm-surge(2).png">
+                <h5>Hurricane Delta Forecast, Storm to Make Landfall in Louisiana Tonight</h5>
+                <p>Water levels could rise to up to 11 feet on the Louisiana coast.</p>
+              </div>
+              <hr>
+              
+              <img class="float-left mr-3" style="height: 95px; width: 95px;" src="img/kamala-harris-mike-pence(2).jpg">
+              <h5>Kamala Harris 'I'm Speaking' Debate Moment Sparks Memes and Merchandise</h5>
+              <p>Mike Pence continuously spoke over Kamala Harris in the vice presidential debate last night, but Harris has been praised for challenging the vice president's interruptions.</p>
+              <hr>
+              
+              <div style="min-height: 95px;">
+                <img class="float-left mr-3" style="height: 95px; width: 95px;" src="img/harris-pence-debate(2).jpg">
+                <h5>How the Squad Reacted to the Vice Presidential Debate</h5>
+                <p>Members of the Democratic "Squad" were watching the debate between Pence and Harris on Wednesday and shared their views on Twitter.</p>
+              </div>
+              <hr>
+              
+              <img class="float-left mr-3" style="height: 95px; width: 95px;" src="img/orthodox.jpg">
+              <h5>Orthodox Jewish Crowd Allegedly Attack Journalist at New York COVID Protest</h5>
+              <p>Jacob Kornbluh tweeted that the crowd yelled "Nazi" and "Hitler" at him and accused him of informing on Jewish commnity.</p>
+              <hr>
+              
+              <img class="float-left mr-3" style="height: 95px; width: 95px;" src="img/meghan-markle-endeavour-fund-awards.jpg">
+              <h5>Meghan Markle For President Fake Website Is Asking Voters to Spoil Ballots</h5>
+              <p>Meghan Markle may have been targetted by voter supression tactics after a fake website falsely claimed she is running for president and asked supporters to "write in" her name on ballots.</p>
+              <hr>
+              
+              <img class="float-left mr-3" style="height: 95px; width: 95px;" src="img/kamala-harris-vice-presidential-debate.jpg">
+              <h5>Michelle Obama Praises Kamala Harris After 'Strong' Debate Performance</h5>
+              <p>The former first lady said the Democratic vice presidential nominee had been "clear" and "honest" throughout the 90-minute head-to-head.</p>
+              <hr>
+              
+              <img class="float-left mr-3" style="height: 95px; width: 95px;" src="img/prayer-bible-pray-stock-getty.jpg">
+              <h5>New Hampshire Church Linked to COVID Outbreak After 10 Day Prayer Session </h5>
+              <p>An investigation by health officials comes as the average number of daily coronavirus cases in the state went up by 35 percent compared with two weeks prior.</p>
+              <hr>
+              
+              <img class="float-left mr-3" style="height: 95px; width: 95px;" src="img/brain-eating-amoeba.jpg">
+              <h5>Brain-Eating Amoeba Moving North Across U.S., and Climate Change May Be Why</h5>
+              <p>One city in Texas is currently disinfecting its entire water supply after Naegleria fowleri was found in it.</p>
+              <hr>
+              
+              <img class="float-left mr-3" style="height: 95px; width: 95px;" src="img/trump-anti-biden-ads.png">
+              <h5>Trump Campaign Facebook Ads Appear to Use Filter to Make Biden Look Older</h5>
+              <p>As the president tweets from the White House after testing positive for COVID-19, a wave of political ads show his opponent with unflattering facial expressions and edited skin.</p>
+              <hr>
+              
+              <div style="min-height: 95px;">
+                <img class="float-left mr-3" style="height: 95px; width: 95px;" src="img/glass-fire-california-october-2020.jpg">
+                <h5>California Fire Update, 23 Major Wildfires Still Burning Across the State</h5>
+                <p>The California Department of Forestry and Fire Protection has warned that "humidity recovery remains slow, continuing the increased fire danger."</p>
+              </div>
+              <hr>
+              
+              <img class="float-left mr-3" style="height: 95px; width: 95px;" src="img/empty-shelf.jpg">
+              <h5>Coins, Flour, Pepperoni and Aluminum Cans—The Pandemic's Biggest Shortages</h5>
+              <p>Many U.S. business are still struggling due to the shortages, but major companies are less likely to be feeling the effects.</p>
+              
+    </div>
+  </div>
+                <!-- MY TURN / CULTURE & TRAVEL -->
+                <div class="col-12 order-6 order-md-3 d-md-none mt-3" id="my-turn" style="background: white;">
+                  <h5 style="font-family: 'Roboto Condensed'; color: gray">MY TURN</h5>
+                  
+                  <div class="row">
+    
+                    <div class="col-12 col-md-4">
+                      <img class="img-fluid" style="width: 100%;" src="img/square-512.png">
+                      <h5 class="pt-2 pb-3" style="font-family: 'Roboto Condensed'; color: gray">Lorem ipsum dolor sit amet, consectetur adipiscing elit</h5>
+                    </div>
+    
+                    <div class="col-12 col-md-4">
+                      <img class="img-fluid" style="width: 100%;" src="img/square-512.png">
+                      <h5 class="pt-2 pb-3" style="font-family: 'Roboto Condensed'; color: gray">Lorem ipsum dolor sit amet, consectetur adipiscing elit</h5>
+                    </div>
+    
+                    <div class="col-12 col-md-4">
+                      <img class="img-fluid" style="width: 100%;" src="img/square-512.png">
+                      <h5 class="pt-2 pb-3" style="font-family: 'Roboto Condensed'; color: gray">Lorem ipsum dolor sit amet, consectetur adipiscing elit</h5>
+                    </div>
+                  </div>
+                  
+                  <h5 style="font-family: 'Roboto Condensed'; color: gray">CULTURE & TRAVEL</h5>
+                  
+                  <div class="row">
+    
+                    <div class="col-12 col-md-4">
+                      <img class="img-fluid" style="width: 100%;" src="img/square-512.png">
+                      <h5 class="pt-2 pb-3" style="font-family: 'Roboto Condensed'; color: gray">Lorem ipsum dolor sit amet, consectetur adipiscing elit</h5>
+                    </div>
+                    <div class="col-12 col-md-4">
+                      <img class="img-fluid" style="width: 100%;" src="img/square-512.png">
+                      <h5 class="pt-2 pb-3" style="font-family: 'Roboto Condensed'; color: gray">Lorem ipsum dolor sit amet, consectetur adipiscing elit</h5>
+                    </div>
+                    <div class="col-12 col-md-4">
+                      <img class="img-fluid" style="width: 100%;" src="img/square-512.png">
+                      <h5 class="pt-2 pb-3" style="font-family: 'Roboto Condensed'; color: gray">Lorem ipsum dolor sit amet, consectetur adipiscing elit</h5>
+                    </div>
+                  
+                  </div>
+                  
+                  
+                </div>
+    
+          
+          <div class="col-12 order-2 col-md-6 order-md-1">
+            
+
+              <div class="col-12 order-md-3">
+                
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        
+
+  
+        
+        
+
+    
+    
+    <!-- RANKINGS-2 -->
+    <div class="col-12 mt-4 p-3 mt-md-0 order-md-6 col-md-6" id="rankings" style="background: white">
       <div class="wrap pt-4">
         <div class="category">
           <h5 class="mb-0">RANKINGS</h5>
@@ -179,89 +406,25 @@
         <a href="#"><img src="img/hospitals.png" style="width: 100%;"  alt="world's best hospitals graphic" class="img-fluid"></a>
       </div> 
       <div class="border">
-        <div class="m-2"><a href="#"><h4>What Brands do You Trust the Most</h4></a>
-        <p>Tell us for a chance to win. 2020 Brandspark Most Trusted Awards. Voted by consumers like you.</p></div>
-      </div>
-      <div class="wrap pt-4">
-        <div class="category">
-          <h5 class="mb-0">RANKINGS</h5>
+        <div class="m-2"><a href="#"><h4>America's Best Hospitals</h4></a>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p></div>
         </div>
-        <a href="#"><img src="img/best-maternity-hospitals-2020.png" style="width: 100%;"  alt="best maternity hospitals graphic" class="img-fluid"></a>
-      </div> 
-      <div class="border"><div class="m-2"><a href="#"><h4>What Brands do You Trust the Most</h4></a>
-      <p>Tell us for a chance to win. 2020 Brandspark Most Trusted Awards. Voted by consumers like you.</p>
+        
+        <div class="wrap pt-4">
+          <div class="category">
+            <h5 class="mb-0">RANKINGS</h5>
+          </div>
+          <a href="#"><img src="img/best-maternity-hospitals-2020.png" style="width: 100%;"  alt="best maternity hospitals graphic" class="img-fluid"></a>
+        </div> 
+        <div class="border"><div class="m-2"><a href="#"><h4>America's Best Maternity Hospitals</h4></a>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+        
       </div>
     </div>
-    </div>
-    <div class="col-12 mt-4 p-3 order-md-6" id="more-stories" style="background: white;">
-      <h5 style="font-family: 'Roboto Condensed'; color: gray">MORE STORIES</h5>
-      <img class="float-left mr-3" style="height: 95px; width: 95px;" src="img/donald-trump(2).png">
-      <h5>Trump Video Claiming COVID-19 'Cure' Allowed to Spread by Facebook, Twitter</h5>
-      <p>"I guess they are therapeutic, some people don't know how to define therapeutic, I view it different, it's a cure," the president asserted in a video uploaded to his social media channels.</p>
-      <hr>
-      <div style="min-height: 95px;">
-        <img class="float-left mr-3" style="height: 95px; width: 95px;" src="img/noaa-storm-surge(2).png">
-        <h5>Hurricane Delta Forecast, Storm to Make Landfall in Louisiana Tonight</h5>
-        <p>Water levels could rise to up to 11 feet on the Louisiana coast.</p>
-      </div>
-      <hr>
-      <img class="float-left mr-3" style="height: 95px; width: 95px;" src="img/kamala-harris-mike-pence(2).jpg">
-      <h5>Kamala Harris 'I'm Speaking' Debate Moment Sparks Memes and Merchandise</h5>
-      <p>Mike Pence continuously spoke over Kamala Harris in the vice presidential debate last night, but Harris has been praised for challenging the vice president's interruptions.</p>
-      <hr>
-      <img class="float-left mr-3" style="height: 95px; width: 95px;" src="img/harris-pence-debate(2).jpg">
-      <h5>How the Squad Reacted to the Vice Presidential Debate</h5>
-      <p>Members of the Democratic "Squad" were watching the debate between Pence and Harris on Wednesday and shared their views on Twitter.</p>
-      <hr>
-      <img class="float-left mr-3" style="height: 95px; width: 95px;" src="img/orthodox.jpg">
-      <h5>Orthodox Jewish Crowd Allegedly Attack Journalist at New York COVID Protest</h5>
-      <p>Jacob Kornbluh tweeted that the crowd yelled "Nazi" and "Hitler" at him and accused him of informing on Jewish commnity.</p>
-      <hr>
-      <img class="float-left mr-3" style="height: 95px; width: 95px;" src="img/meghan-markle-endeavour-fund-awards.jpg">
-      <h5>Meghan Markle For President Fake Website Is Asking Voters to Spoil Ballots</h5>
-      <p>Meghan Markle may have been targetted by voter supression tactics after a fake website falsely claimed she is running for president and asked supporters to "write in" her name on ballots.</p>
-      <hr>
-      <img class="float-left mr-3" style="height: 95px; width: 95px;" src="img/kamala-harris-vice-presidential-debate.jpg">
-      <h5>Michelle Obama Praises Kamala Harris After 'Strong' Debate Performance</h5>
-      <p>The former first lady said the Democratic vice presidential nominee had been "clear" and "honest" throughout the 90-minute head-to-head.</p>
-      <hr>
-      <img class="float-left mr-3" style="height: 95px; width: 95px;" src="img/prayer-bible-pray-stock-getty.jpg">
-      <h5>New Hampshire Church Linked to COVID Outbreak After 10 Day Prayer Session </h5>
-      <p>An investigation by health officials comes as the average number of daily coronavirus cases in the state went up by 35 percent compared with two weeks prior.</p>
-      <hr>
-      <img class="float-left mr-3" style="height: 95px; width: 95px;" src="img/brain-eating-amoeba.jpg">
-      <h5>Brain-Eating Amoeba Moving North Across U.S., and Climate Change May Be Why</h5>
-      <p>One city in Texas is currently disinfecting its entire water supply after Naegleria fowleri was found in it.</p>
-      <hr>
-      <img class="float-left mr-3" style="height: 95px; width: 95px;" src="img/trump-anti-biden-ads.png">
-      <h5>Trump Campaign Facebook Ads Appear to Use Filter to Make Biden Look Older</h5>
-      <p>As the president tweets from the White House after testing positive for COVID-19, a wave of political ads show his opponent with unflattering facial expressions and edited skin.</p>
-      <hr>
-      <img class="float-left mr-3" style="height: 95px; width: 95px;" src="img/glass-fire-california-october-2020.jpg">
-      <h5>California Fire Update, 23 Major Wildfires Still Burning Across the State</h5>
-      <p>The California Department of Forestry and Fire Protection has warned that "humidity recovery remains slow, continuing the increased fire danger."</p>
-      <hr>
-      <img class="float-left mr-3" style="height: 95px; width: 95px;" src="img/empty-shelf.jpg">
-      <h5>Coins, Flour, Pepperoni and Aluminum Cans—The Pandemic's Biggest Shortages</h5>
-      <p>Many U.S. business are still struggling due to the shortages, but major companies are less likely to be feeling the effects.</p>
-    </div>
-    <div class="col-12 mt-4 p-3 order-md-7" id="my-turn" style="background: white;">
-      <h5 style="font-family: 'Roboto Condensed'; color: gray">MY TURN</h5>
-      <img class="img-fluid" style="width: 100%;" src="img/square-512.png">
-      <h5 class="pt-2 pb-3" style="font-family: 'Roboto Condensed'; color: gray">Lorem ipsum dolor sit amet, consectetur adipiscing elit</h5>
-      <img class="img-fluid" style="width: 100%;" src="img/square-512.png">
-      <h5 class="pt-2 pb-3" style="font-family: 'Roboto Condensed'; color: gray">Lorem ipsum dolor sit amet, consectetur adipiscing elit</h5>
-      <img class="img-fluid" style="width: 100%;" src="img/square-512.png">
-      <h5 class="pt-2 pb-3" style="font-family: 'Roboto Condensed'; color: gray">Lorem ipsum dolor sit amet, consectetur adipiscing elit</h5>
-      <img class="img-fluid" style="width: 100%;" src="img/square-512.png">
-      <h5 class="pt-2 pb-3" style="font-family: 'Roboto Condensed'; color: gray">Lorem ipsum dolor sit amet, consectetur adipiscing elit</h5>
-      <img class="img-fluid" style="width: 100%;" src="img/square-512.png">
-      <h5 class="pt-2 pb-3" style="font-family: 'Roboto Condensed'; color: gray">Lorem ipsum dolor sit amet, consectetur adipiscing elit</h5>
-      <img class="img-fluid" style="width: 100%;" src="img/square-512.png">
-      <h5 class="pt-2 pb-3" style="font-family: 'Roboto Condensed'; color: gray">Lorem ipsum dolor sit amet, consectetur adipiscing elit</h5>
-      <img class="img-fluid" style="width: 100%;" src="img/square-512.png">
-      <h5 class="pt-2 pb-3" style="font-family: 'Roboto Condensed'; color: gray">Lorem ipsum dolor sit amet, consectetur adipiscing elit</h5>
-    </div>
+      
+      
+<!-- MAGAZINE -->
     <div class="col-12 mt-4 p-3 order-md-8" id="magazine" style="background: white;">
       <h5 class="text-center" style="font-family: 'Roboto Condensed';"><img style="height: 30px; margin-top: -5px;" src="img/favicon.ico"> IN THE MAGAZINE</h5>
       <div class="wrap">
@@ -282,25 +445,25 @@
         <span style="padding: 2.5px; font-family: 'Roboto Condensed'; background: #f72210; color: white; font-size: 1.25rem;">COVER</span>
         <span style="font-family: 'Roboto Condensed'; color: #f72210; font-size: 1.25rem;" class="ml-1">U.S.</span>
       </div>
-      <h5 class="pt-2 pb-3" style="font-family: 'Roboto Condensed'; color: gray">Lorem ipsum dolor sit amet, consectetur adipiscing elit</h5>
+      <h5 class="pt-2 pb-3" style="font-family: 'Roboto Condensed'; color: black">Lorem ipsum dolor sit amet, consectetur adipiscing elit</h5>
       <img class="img-fluid" style="width: 100%;" src="img/square-512.png">
       <div class="pt-2">
         <span style="padding: 2.5px; font-family: 'Roboto Condensed'; background: #f72210; color: white; font-size: 1.25rem;">COVER</span>
         <span style="font-family: 'Roboto Condensed'; color: #f72210; font-size: 1.25rem;" class="ml-1">U.S.</span>
       </div>
-      <h5 class="pt-2 pb-3" style="font-family: 'Roboto Condensed'; color: gray">Lorem ipsum dolor sit amet, consectetur adipiscing elit</h5>
+      <h5 class="pt-2 pb-3" style="font-family: 'Roboto Condensed'; color: black">Lorem ipsum dolor sit amet, consectetur adipiscing elit</h5>
       <img class="img-fluid" style="width: 100%;" src="img/square-512.png">
       <div class="pt-2">
         <span style="padding: 2.5px; font-family: 'Roboto Condensed'; background: #f72210; color: white; font-size: 1.25rem;">COVER</span>
         <span style="font-family: 'Roboto Condensed'; color: #f72210; font-size: 1.25rem;" class="ml-1">U.S.</span>
       </div>
-      <h5 class="pt-2 pb-3" style="font-family: 'Roboto Condensed'; color: gray">Lorem ipsum dolor sit amet, consectetur adipiscing elit</h5>
+      <h5 class="pt-2 pb-3" style="font-family: 'Roboto Condensed'; color: black">Lorem ipsum dolor sit amet, consectetur adipiscing elit</h5>
       <img class="img-fluid" style="width: 100%;" src="img/square-512.png">
       <div class="pt-2">
         <span style="padding: 2.5px; font-family: 'Roboto Condensed'; background: #f72210; color: white; font-size: 1.25rem;">COVER</span>
         <span style="font-family: 'Roboto Condensed'; color: #f72210; font-size: 1.25rem;" class="ml-1">U.S.</span>
       </div>
-      <h5 class="pt-2 pb-3" style="font-family: 'Roboto Condensed'; color: gray">Lorem ipsum dolor sit amet, consectetur adipiscing elit</h5>
+      <h5 class="pt-2 pb-3" style="font-family: 'Roboto Condensed'; color: black">Lorem ipsum dolor sit amet, consectetur adipiscing elit</h5>
       <div class="wrap">
         <div class="category">
           <h5 class="mb-0">IN FOCUS</h5>
