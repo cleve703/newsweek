@@ -219,6 +219,11 @@ a.genericon:hover {
   background-repeat: no-repeat, no-repeat; 
   background-position: 65% 30%, 35% 20%;
 }
+.left-content,
+.middle-content,
+.right-content {
+  background-color: white;
+}
 @media (max-width: 426px) {
   #subscription-link {
     display: none;
@@ -244,7 +249,14 @@ a.genericon:hover {
   }
 }
 
+@media (min-width:992px) {
+  #content {
+    padding: 0px;
+  }
+}
+
 .row{
   margin-left: 0;
   margin-right: 0;
 }
+
