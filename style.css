@@ -247,11 +247,21 @@ a.genericon:hover {
     margin-left: 45% !important;
     align-self: flex-start !important;
   }
+  #featured-stories {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+  }
 }
 
 @media (min-width:992px) {
   #content {
     padding: 0px;
+  }
+  #opinion {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
   }
 }
 
