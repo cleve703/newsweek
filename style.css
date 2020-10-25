@@ -42,6 +42,9 @@
 .logo-large > svg {
   height: 60px;
 }
+.rankings {
+  background-color: white;
+}
 #link-list {
   right: 0;
   float: right;
@@ -178,6 +181,9 @@ byline::before {
   height: 170px;
   border: 1px solid lightgray; 
 }
+#more-stories-medium, #more-stories-mobile > article {
+  min-height: 95px;
+}
 .genericon {
   font-family: "Genericons";
   font-size: 1.6rem;
@@ -213,7 +219,7 @@ a.genericon:hover {
   background-repeat: no-repeat, no-repeat; 
   background-position: 65% 30%, 35% 20%;
 }
-@media (max-width: 400px) {
+@media (max-width: 426px) {
   #subscription-link {
     display: none;
   }
@@ -233,7 +239,7 @@ a.genericon:hover {
   #subscribe-img-container > h5,
   #subscribe-img-container > h6,
   #subscribe-img-container > button {
-    margin-left: 40% !important;
+    margin-left: 45% !important;
     align-self: flex-start !important;
   }
 }
