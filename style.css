@@ -205,6 +205,14 @@ a.genericon:hover {
 #footer-links a, #lower-footer-links a {
   color: #666;
 }
+#subscribe-img-container {
+  background: #f4f5f6; 
+  min-height: 400px; 
+  background-image: url('img/cover-october-09-16-2020.jpg'), url('img/cover-october-02-2020.jpg'); 
+  background-size: 30%, 30%; 
+  background-repeat: no-repeat, no-repeat; 
+  background-position: 65% 30%, 35% 20%;
+}
 @media (max-width: 400px) {
   #subscription-link {
     display: none;
@@ -216,6 +224,17 @@ a.genericon:hover {
     content: " | ";
     margin-right: 8px;
     color: #ccc !important;
+  }
+  #subscribe-img-container {
+    min-height: 301px;
+    background-size: 25%, 25%;
+    background-position: 15% 65%, 5% 35%;
+  }
+  #subscribe-img-container > h5,
+  #subscribe-img-container > h6,
+  #subscribe-img-container > button {
+    margin-left: 40% !important;
+    align-self: flex-start !important;
   }
 }
 
