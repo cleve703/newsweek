@@ -20,7 +20,7 @@ As of October 25, 2020, I have completed the assignment as intended. However, in
 
 ## About Me
 
-My name: Jay Conner
-My website: [CodingCop](https://codingcop.com)
-My Twitter: [@JayConner17](https://twitter.com/JayConner17)
-My LinkedIn: [LinkedIn](https://www.linkedin.com/in/jay-c-8000196)
+* My name: Jay Conner
+* My website: [CodingCop](https://codingcop.com)
+* My Twitter: [@JayConner17](https://twitter.com/JayConner17)
+* My LinkedIn: [LinkedIn](https://www.linkedin.com/in/jay-c-8000196)
